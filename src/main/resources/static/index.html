@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumir GraphQL con HTML y Fetch</title>
+</head>
+<body>
+    <h1>Consulta de Estudiantes</h1>
+    <div id="student-list"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const query = `
+                query {
+                    findAllStudents {
+                        id
+                        name
+                        lastName
+                        age
+                        email
+                        course {
+                            id
+                            name
+                            category
+                            teacher
+                            description
+                        }
+                    }
+                }
+            `;
+
+            fetch('http://localhost:8080/graphql', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json',
+                },
+                body: JSON.stringify({ query })
+            })
+            .then(response => response.json())
+            .then(data => {
+                displayStudents(data.data.findAllStudents);
+            })
+            .catch(error => {
+                console.error('Error fetching students:', error);
+            });
+
+            function displayStudents(students) {
+                const studentList = document.getElementById('student-list');
+                studentList.innerHTML = '';
+                students.forEach(student => {
+                    const studentDiv = document.createElement('div');
+                    studentDiv.innerHTML = `
+                        <p><strong>Name:</strong> ${student.name} ${student.lastName}</p>
+                        <p><strong>Age:</strong> ${student.age}</p>
+                        <p><strong>Email:</strong> ${student.email}</p>
+                        <p><strong>Course:</strong> ${student.course.name}</p>
+                        <hr>
+                    `;
+                    studentList.appendChild(studentDiv);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
