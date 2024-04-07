@@ -39,11 +39,13 @@ type Course {
     id: ID,
     name: String,
     category: String,
-    teacher: String
+    teacher: String,
+    description: String
 }
 
 input InputCourse {
     name: String,
     category: String,
-    teacher: String
+    teacher: String,
+    description:String
 }

@@ -8,4 +8,5 @@ public class InputCourse {
     private String name;
     private String category;
     private String teacher;
+    private String description;
 }

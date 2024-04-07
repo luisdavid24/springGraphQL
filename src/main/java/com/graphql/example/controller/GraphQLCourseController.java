@@ -37,6 +37,7 @@ public class GraphQLCourseController {
         course.setName(inputCourse.getName());
         course.setCategory(inputCourse.getCategory());
         course.setTeacher(inputCourse.getTeacher());
+        course.setDescription(inputCourse.getDescription());
 
         courseService.createCourse(course);
         return course;

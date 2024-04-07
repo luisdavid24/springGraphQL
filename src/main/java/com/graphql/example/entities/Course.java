@@ -16,6 +16,7 @@ public class Course {
     private String name;
     private String category;
     private String teacher;
+    private String description;
 
     @OneToMany(mappedBy = "course", fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Student.class)
     private List<Student> studentList;
