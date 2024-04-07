@@ -43,6 +43,7 @@ public class GraphQLStudentController {
         student.setName(inputStudent.getName());
         student.setLastName(inputStudent.getLastName());
         student.setAge(inputStudent.getAge());
+        student.setEmail(inputStudent.getEmail());
         student.setCourse(course);
 
         studentService.createStudent(student);

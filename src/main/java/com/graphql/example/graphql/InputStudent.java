@@ -9,5 +9,7 @@ public class InputStudent {
     private String name;
     private String lastName;
     private Integer age;
+    private String email;
     private String courseId;
+
 }

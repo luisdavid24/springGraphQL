@@ -16,6 +16,7 @@ public class Student {
     @Column(name = "last_name")
     private String lastName;
     private Integer age;
+    private String email;
 
     @ManyToOne(fetch = FetchType.LAZY, targetEntity = Course.class)
     private Course course;
