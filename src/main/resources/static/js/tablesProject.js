@@ -1,4 +1,3 @@
-// import { createStudent } from './graphqlFunctions.js';
 loadStudents();
 loadCourse();
 
@@ -183,30 +182,7 @@ async function saveStudent(){
             courseId : undefined, 
         };
 
-        const query = `
-            query {
-                findAllCourses {
-                    id,
-                    name,
-                    category,
-                    description,
-                    teacher
-                  }
-            }
-        `;
         
-        const requestCourse = await   fetch('http://localhost:8080/graphql', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json',
-            },
-            body: JSON.stringify({ query })
-        })
-        let dataCourse = await requestCourse.json();
-        
-        
-
         let nameStudent = document.getElementById('nameStudent').value;
         let lastNameStudent = document.getElementById('lastNameStudent').value;
         let age = document.getElementById('age').value;
@@ -257,8 +233,8 @@ async function selectStudent(){
         let cursos = await requestCourse.json();
        
         const selectCurso = document.getElementById('courseStudent');
+        selectCurso.innerHTML='';
         
-        let listadoHtmlCourse = '';
         for (let course of cursos.data.findAllCourses) {
             const option = document.createElement('option');
             option.value = course.id;
