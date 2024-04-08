@@ -183,6 +183,17 @@
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
                         <h6 class="m-0 font-weight-bold text-primary">Course Table</h6>
+                        
+                        <div class="card-header py-3"  data-toggle="modal" data-target="#exampleModalCourse" onclick="">
+                            <a  class="btn btn-primary btn-icon-split btn-lg">
+                                <span class="icon text-white-50">
+                                    <i class="fas fa-flag"></i>
+                                </span>
+                                <span class="text">Create Course</span>
+                            </a>
+                        </div>
+
+
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -217,6 +228,57 @@
     
     
             </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCourse" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New Course</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2>Cursos form</h2>
+                            <form id="studentForm">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input type="text" class="form-control" id="nameCourse" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Description">Description:</label>
+                                    <input type="text" class="form-control" id="DescriptionCourse" name="Description" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Teacher:</label>
+                                    <input type="text" class="form-control" id="teacherCourse" name="lastName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="course">Category:</label>
+                                    <select class="form-control" id="courseCategory" name="course" required>
+                                        <option value="NULL">Select the category</option>
+                                        <option value="Arts and Humanities">Arts and Humanities</option>
+                                        <option value="Engineering and Technology">Engineering and Technology</option>
+                                        <option value="Law ">Law </option>
+                                        <option value="Science ">Science </option>
+                                        <option value="Technology ">Technology </option>
+                                    </select>
+                                </div>
+                                <!-- <button type="submit" class="btn btn-primary">Save</button> -->
+                            </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button  type="submit"  onclick="saveStudent()" class="btn btn-primary">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             <!-- Donut Chart -->
             <div class="col-xl-4 col-lg-5">
                 <div class="card shadow mb-4">
