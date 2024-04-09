@@ -1,4 +1,4 @@
-# Pig Center
+# Spring Boot with GraphQL
 By Luis David Lopez Mendoza
 
 ## Brief Project Description
