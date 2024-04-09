@@ -16,7 +16,7 @@ This project responds to the challenge posed by the teacher.
 
 1. Database Configuration:
    - Before starting, make sure you have PostgreSQL installed on your machine. You will need to change the settings in the 'application.properties' file.
-   - You must create a database with the name 'pigCenter'. The creation of the tables will be done by Spring Boot during the execution process.
+   - You must create a database with the name 'SpringBootGraphQl'. The creation of the tables will be done by Spring Boot during the execution process.
 
 2. Running the database script:
 
