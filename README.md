@@ -3,7 +3,7 @@ By Luis David Lopez Mendoza
 
 ## Brief Project Description
 
-La Granja S.A, a pig center, needed a web solution implementing the Model-View-Controller (MVC) design pattern. This project emerged in response to the challenges posed by La Granja S.A.
+This project responds to the challenge posed by the teacher.
 
 ## Table of Contents
 
