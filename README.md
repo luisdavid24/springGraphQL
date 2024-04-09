@@ -36,11 +36,11 @@ INSERT INTO students (name, last_name, age, email, course_id) VALUES ('Ava', 'Ho
 INSERT INTO students (name, last_name, age, email, course_id) VALUES ('Michael', 'Williams', 22,'Michael@example.com', 3);
 
 ```
-## Uso:
-El desarrollo del proyecto está consolidado en la rama 'devBack'. Para utilizar el proyecto, primero debes ejecutar el backend (implementado en Spring Boot) y luego ejecutar el archivo SQL para configurar la base de datos. Después, puedes iniciar el frontend utilizando un servidor en vivo (live server).
+## Usage:
+To use the project, you must first run the backend (implemented in Spring Boot) and then execute the SQL file to set up the database. Afterward, you can start the frontend using a live server.
 
-## Tecnologia
-Las tecnologías utilizadas en el proyecto fueron:
+## Technology
+The technologies used in the project were:
 
 - Spring Boot
 - Bootstrap
@@ -49,14 +49,14 @@ Las tecnologías utilizadas en el proyecto fueron:
 - CSS
 - GraphQl
 
-## Diagrama
-Si desea observar el diagrama de clases del proyecto, da click al siguiente link:
+## Diagram
+If you want to view the project's class diagram, click the following link:
 https://drive.google.com/file/d/1c9ihgeT8BkEReCVcwuCx47P5MyLD7zlT/view?usp=drive_link
 
 
-## Contacto
+## Contact
 
-Si tienes alguna pregunta, comentario o sugerencia sobre el proyecto, no dudes en ponerte con nosotros.
+If you have any questions, comments, or suggestions about the project, feel free to reach out to me.
 
 - Name: Luis David
 - Email: luis_lopez82201@elpoli.edu.co
