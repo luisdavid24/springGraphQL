@@ -10,7 +10,6 @@ La Granja S.A, a pig center, needed a web solution implementing the Model-View-C
 - [Configuration](#configuration)
 - [Usage](#usage)
 - [Technology](#technology)
-- [Diagram](#diagram)
 - [Contact](#contact)
 
 ## Configuration
@@ -48,11 +47,6 @@ The technologies used in the project were:
 - HTML
 - CSS
 - GraphQl
-
-## Diagram
-If you want to view the project's class diagram, click the following link:
-https://drive.google.com/file/d/1c9ihgeT8BkEReCVcwuCx47P5MyLD7zlT/view?usp=drive_link
-
 
 ## Contact
 
