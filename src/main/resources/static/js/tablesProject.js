@@ -252,6 +252,47 @@ async function selectStudent(){
 
 }
 
+
+async function saveCourse(){
+    try {
+
+        let inputCourse={
+            id:undefined,
+            name: undefined,
+            category:undefined,
+            teacher:undefined,
+            description:undefined
+            
+        };
+
+       
+        
+        let nameCourse = document.getElementById('nameCourse').value;
+        let descriptionCourse = document.getElementById('DescriptionCourse').value;
+        let teacherCourse = document.getElementById('teacherCourse').value;
+        let category = document.getElementById('courseCategory').value;
+        
+        inputCourse.name=nameCourse;
+        inputCourse.description=descriptionCourse;
+        inputCourse.teacher=teacherCourse;
+        inputCourse.category=category;
+        
+        console.log(inputCourse);
+        
+        createCourse(inputCourse)
+        .then(data => {
+            console.log('Curso creado:', data);
+            loadCourse();
+        })
+        .catch(error => {
+            console.error('Error al crear curso:', error);
+        });
+        
+    } catch (error) {
+        
+    }
+}
+
 async function createCourse(inputCourse) {
     try {
         const mutation = `

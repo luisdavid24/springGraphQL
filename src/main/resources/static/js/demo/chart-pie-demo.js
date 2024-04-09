@@ -112,7 +112,7 @@ var myPieChart = new Chart(ctx, {
     labels: couserName,
     datasets: [{
       data: dataCourseChart,
-      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc'],
+      backgroundColor: ['#4e73df', '#1cc88a', '#36b9cc','#00FFFF','#4B0082','#F5FFFA','#6A5ACD'],
       hoverBackgroundColor: ['#2e59d9', '#17a673', '#2c9faf'],
       hoverBorderColor: "rgba(234, 236, 244, 1)",
     }],
